@@ -13,6 +13,16 @@ public class MyController {
 
     @GetMapping("/admin")
     public String getAdminPage() {
-        return "admin_page";
+        return "/admin/admin_page";
+    }
+
+    @GetMapping("/user1")
+    public String getUserPage1() {
+        return "/user/user1";
+    }
+
+    @GetMapping("/user2")
+    public String getUserPage2() {
+        return "user/user2";
     }
 }
